@@ -28,7 +28,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', default='your secret key')
 DEBUG = 'RENDER' not in os.environ
 
 
-APP_NAME = os.environ.get("FLY_APP_NAME")
+""" APP_NAME = os.environ.get("FLY_APP_NAME")"""
 ALLOWED_HOSTS = [] 
 RENDER_EXTERNAL_HOSTNAME = os.environ.get('RENDER_EXTERNAL_HOSTNAME')
 if RENDER_EXTERNAL_HOSTNAME:
@@ -173,7 +173,7 @@ STATICFILES_DIRS = [
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 #CORS AUTHOTIZATION
-CORS_ALLOWED_ORIGINS=["http://localhost:5173"]
+CORS_ALLOWED_ORIGINS=["https://bright-klepon-c0fb17.netlify.app/pages/eventos"]
 
 CORS_ALLOW_CREDENTIALS=True
 
