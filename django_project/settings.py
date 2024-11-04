@@ -33,7 +33,7 @@ ALLOWED_HOSTS = []
 RENDER_EXTERNAL_HOSTNAME = os.environ.get('RENDER_EXTERNAL_HOSTNAME')
 if RENDER_EXTERNAL_HOSTNAME:
     ALLOWED_HOSTS.append(RENDER_EXTERNAL_HOSTNAME)
-ALLOWED_HOSTS.append('https://bright-klepon-c0fb17.netlify.app/pages/eventos')
+ALLOWED_HOSTS.append('https://bright-klepon-c0fb17.netlify.app')
 
 
 INSTALLED_APPS = [
