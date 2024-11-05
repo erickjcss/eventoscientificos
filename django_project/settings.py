@@ -173,7 +173,7 @@ STATICFILES_DIRS = [
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 #CORS AUTHOTIZATION
-CORS_ALLOWED_ORIGINS=["https://bright-klepon-c0fb17.netlify.app/pages/eventos"]
+CORS_ALLOWED_ORIGINS=["https://bright-klepon-c0fb17.netlify.app"]
 
 CORS_ALLOW_CREDENTIALS=True
 
