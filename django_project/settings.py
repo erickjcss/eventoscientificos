@@ -93,8 +93,9 @@ TEMPLATES = [
 WSGI_APPLICATION = 'django_project.wsgi.application'
 
 
-MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, "media")
+MEDIA_ROOT =BASE_DIR / "files"
+MEDIA_URL = "/media-files/"
+
    
 
 
