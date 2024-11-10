@@ -33,7 +33,7 @@ ALLOWED_HOSTS = []
 RENDER_EXTERNAL_HOSTNAME = os.environ.get('RENDER_EXTERNAL_HOSTNAME')
 if RENDER_EXTERNAL_HOSTNAME:
     ALLOWED_HOSTS.append(RENDER_EXTERNAL_HOSTNAME)
-ALLOWED_HOSTS.append('https://bright-klepon-c0fb17.netlify.app')
+ALLOWED_HOSTS.append('https://eventoscientificosfrontend.onrender.com')
 
 
 INSTALLED_APPS = [
@@ -173,7 +173,7 @@ STATICFILES_DIRS = [
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 #CORS AUTHOTIZATION
-CORS_ALLOWED_ORIGINS=["https://bright-klepon-c0fb17.netlify.app"]
+CORS_ALLOWED_ORIGINS=["https://eventoscientificosfrontend.onrender.com"]
 
 CORS_ALLOW_CREDENTIALS=True
 
