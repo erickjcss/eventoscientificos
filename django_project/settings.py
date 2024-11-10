@@ -163,6 +163,18 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+if not DEBUG:
+    # Tell Django to copy static assets into a path called `staticfiles` (this is specific to Render)
+    STATIC_ROOT = os.path.join(BASE_DIR, '/static/')
+    STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+# Directorio donde Django buscará archivos estáticos
+STATIC_ROOT = BASE_DIR / 'staticfiles'
+# Directorio donde Django buscará archivos estáticos específicos de la aplicación
+STATICFILES_DIRS = [
+    BASE_DIR / 'pdfs', # Asegúrate de que 'pdfs' esté en la raíz de tu proyecto
+]
+# Default primary key field type
+# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
