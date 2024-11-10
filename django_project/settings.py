@@ -93,6 +93,10 @@ TEMPLATES = [
 WSGI_APPLICATION = 'django_project.wsgi.application'
 
 
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+   
+
 
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
@@ -171,7 +175,7 @@ if not DEBUG:
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 # Directorio donde Django buscará archivos estáticos específicos de la aplicación
 STATICFILES_DIRS = [
-    BASE_DIR / 'static/pdfs', # Asegúrate de que 'pdfs' esté en la raíz de tu proyecto
+    BASE_DIR / 'pdfs', # Asegúrate de que 'pdfs' esté en la raíz de tu proyecto
 ]
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field

@@ -14,8 +14,8 @@ class Publications(models.Model):
     emailEvento=models.EmailField()
     enlace=models.URLField()
     tematicas=models.TextField()
-    pdf = models.FileField(upload_to="pdfs",blank=True)
-    foto = models.ImageField(upload_to="pdfs",blank=True)  
+    pdf = models.FileField(upload_to="images/%Y/%m/%d",blank=True)
+    foto = models.ImageField(upload_to="images/%Y/%m/%d",blank=True)  
     likes=models.TextField(blank=True,default="")
     aprobada=models.BooleanField(blank=True,default=True)
 
