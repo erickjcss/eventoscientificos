@@ -34,7 +34,7 @@ urlpatterns = [
      path('sesion/',include('sesion.urls')),
        path('sesi/',include('sesi.urls')),
     path('solicitud/',include('solicitud.urls')),
-] + static(settings.STATIC_URL,document_root=settings.STATIC_ROOT)
+] 
    
 
 if settings.DEBUG:
