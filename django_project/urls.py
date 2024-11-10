@@ -1,3 +1,7 @@
+
+
+from django.conf import settings
+from django.conf.urls.static import static
 """
 URL configuration for django_project project.
 
@@ -30,7 +34,8 @@ urlpatterns = [
      path('sesion/',include('sesion.urls')),
        path('sesi/',include('sesi.urls')),
     path('solicitud/',include('solicitud.urls')),
-]
+]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+   
 
 if settings.DEBUG:
     urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
