@@ -6,3 +6,4 @@ from rest_framework.views import APIView
 class PublicationsView(viewsets.ModelViewSet):
     serializer_class=PublicationsSerializer
     queryset=Publications.objects.all()
+

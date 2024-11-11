@@ -32,8 +32,8 @@ urlpatterns = [
      path('pendientes/',include('pendientes.urls')),
      path('notifica/',include('notifica.urls')),
      path('sesion/',include('sesion.urls')),
-       path('sesi/',include('sesi.urls')),
-    path('solicitud/',include('solicitud.urls')),
+     path('sesi/',include('sesi.urls')),
+     path('solicitud/',include('solicitud.urls')),
 ] 
    
 
