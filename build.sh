@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+# exit on error
 set -o errexit
 
 # Modify this line as needed for your package manager (pip, poetry, etc.)
