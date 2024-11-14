@@ -33,7 +33,7 @@ ALLOWED_HOSTS = ["127.0.0.1"]
 RENDER_EXTERNAL_HOSTNAME = os.environ.get('RENDER_EXTERNAL_HOSTNAME')
 if RENDER_EXTERNAL_HOSTNAME:
     ALLOWED_HOSTS.append(RENDER_EXTERNAL_HOSTNAME)
-ALLOWED_HOSTS.append('https://eventoscientificosfrontend-abah.onrender.com')
+ALLOWED_HOSTS.append('https://eventoscientificosfrontend-c5gu.onrender.com')
 ALLOWED_HOSTS.append('http://127.0.0.1')
 
 INSTALLED_APPS = [
@@ -182,7 +182,7 @@ STATICFILES_DIRS = [
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 #CORS AUTHOTIZATION
-CORS_ALLOWED_ORIGINS=["https://eventoscientificosfrontend-abah.onrender.com","http://127.0.0.1:8000"]
+CORS_ALLOWED_ORIGINS=["https://eventoscientificosfrontend-c5gu.onrender.com/","http://127.0.0.1:8000"]
 
 CORS_ALLOW_CREDENTIALS=True
 
