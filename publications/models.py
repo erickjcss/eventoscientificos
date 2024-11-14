@@ -14,11 +14,13 @@ class Publications(models.Model):
     emailEvento=models.EmailField()
     enlace=models.URLField()
     tematicas=models.TextField()
-    pdf = models.FileField(upload_to="images/%Y/%m/%d",blank=True)
-    foto = models.ImageField(upload_to="images/%Y/%m/%d",blank=True)  
+    pdf = models.FileField(upload_to="imagenes",blank=True)
+    foto = models.ImageField(upload_to="imagenes",blank=True)  
     likes=models.TextField(blank=True,default="")
     aprobada=models.BooleanField(blank=True,default=True)
 
    
     def __str__(self):
        return self.nombreEvento
+    
+
