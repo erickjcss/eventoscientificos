@@ -94,8 +94,8 @@ WSGI_APPLICATION = 'django_project.wsgi.application'
 
 
 
-MEDIA_ROOT = BASE_DIR / "files"
-MEDIA_URL = '/media-files/'   
+MEDIA_URL = '/media/' 
+MEDIA_ROOT = BASE_DIR /   'media'
 
 
 # Database
@@ -165,11 +165,12 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
-STATIC_URL = 'static/'
-
+STATIC_URL = '/static/'
+STATIC_ROOT = BASE_DIR / 'staticfiles'
 if not DEBUG:
+    STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
     # Tell Django to copy static assets into a path called `staticfiles` (this is specific to Render)
-    STATIC_ROOT = os.path.join(BASE_DIR, '/staticfiles/')
+    
     STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 
