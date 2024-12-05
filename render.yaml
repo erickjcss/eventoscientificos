@@ -1,0 +1,1 @@
+services: - type: web name: eventoscientificos-nxmx env: python buildCommand: "pip install -r requirements.txt" startCommand: "gunicorn django_project.wsgi" envVars: - key: "DJANGO_SETTINGS_MODULE" value: "django_project.settings" nginx: configPath: ./nginx.conf
